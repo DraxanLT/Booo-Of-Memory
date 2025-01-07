@@ -1,0 +1,45 @@
+:root,
+:root.halloween{
+    --principal_color: #ee6808ec;
+    --secondary_color: #3f2650;
+    --text_color:#ffffff;
+    --bacground_color: #301c34;
+    --first_section_image: url('/assets/main/back.png');
+    --stats_section_color:#301c34;
+    --stats_section_image: url('/assets/main/ghost.png'); 
+    --back_footer_color:#301c34;
+    --back_header_color :  rgba(0, 0, 0, 0.555);
+    --header_footer_title_color:#ee6808;
+    --title_font: "Creepster";
+    --principal_font :"Creepster";
+    --boxshadow_color: #ee680846 ;
+    --back_color:rgba(127, 80, 163, 0.63);
+    --image_mechant: url('/assets/memory/Mechant/main.png');
+    --cursor_pointing_halloween:url("/assets/cursor/pointing_halloween.png");
+    --cursor_hand_halloween:url("/assets/cursor/hand_halloween.png");
+    --title_fade_background: url("/assets/main/back.png")
+}
+ :root.christmas{
+    --principal_color: #971a22;
+    --secondary_color: #081c1c;
+    --text_color:#ffffff;
+    --bacground_color: #054537;
+    --stats_section_color:#054537;
+    --stats_section_image: url('/assets/main/santa_claus.png'); 
+    --first_section_image: url('/assets/main/christmas_first.png');
+    --back_footer_color:#054537;
+    --back_header_color :  rgba(0, 0, 0, 0.555);
+    --header_footer_title_color:#971a22;
+    --title_font: "Mountains of Christmas" ;
+    --principal_font :"Creepster";
+    --boxshadow_color: #ff001171 ;
+    --back_color: #0545379a;
+    --image_mechant: url('/assets/memory/Mechant/main_winter.png');
+    --cursor_pointing_halloween:url("/assets/cursor/pointing_christmas.png");
+    --cursor_hand_halloween:url("/assets/cursor/hand_christmas.png");
+}
+
+* {
+    transition: all .4s ease-in-out;
+  }
+

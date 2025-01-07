@@ -1,0 +1,369 @@
+
+body{
+
+    position: relative;
+
+    
+}
+a{
+    cursor:var(--cursor_hand_halloween),default;
+}
+  body{
+    background-color:var(--bacground_color);
+    cursor:var(--cursor_pointing_halloween),default;
+
+
+  }
+
+.bigtitle {
+    font-size: 4rem;
+    
+}
+
+.titlefade{
+    height: 8rem;
+}
+
+
+.cbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    margin-bottom: 1%;
+}
+
+.cinfos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.clogobox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 200px;
+    align-items: center;
+}
+
+.clogophone {
+    background-color:  var(--secondary_color);
+    background-image: url('/assets/contact/phonelogo.png');
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-inline: 12px ;
+    margin-top: 12px;
+}
+
+.clogomail {
+    background-color:  var(--secondary_color);
+    background-image: url('/assets/contact/maillogo.png');
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-inline: 12px ;
+    margin-top: 12px;
+}
+
+.clogoloca {
+    background-color:  var(--secondary_color);
+    background-image: url('/assets/contact/localogo.png');
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-inline: 12px ;
+    margin-top: 12px;
+}
+
+.clogophone:hover, .clogomail:hover, .clogoloca:hover {
+    background-color: var(--principal_color);
+    background-image: url('/assets/contact/copytoclipboardlogo.png');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.ctext {
+    text-align: center;
+    flex: 1;
+    height: 30px;
+    font-size: 1.3rem;
+}
+
+.ctextsmall {
+    
+    display: none;
+}
+
+.mbox {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: inset var(--principal_color);
+    border-radius: 0.5rem;
+    display: flex;
+    width: 36.55rem;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.trdbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+
+.frtbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.smallgap {
+    font-size: 0.5rem;
+    margin-top: 10px;
+}
+
+.ntextzone {
+    background-color: rgba(0,0,0,0.4);
+    height: 3rem;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid  var(--secondary_color);
+    display: flex;
+    cursor:var(--cursor_hand_halloween),default;
+
+    padding: 8px 8px;
+    font-size: medium;
+    color: #ffffff;
+    cursor:var(--cursor_hand_halloween),default;
+
+}
+
+.longtextzone {
+    background-color: rgba(0,0,0,0.4);
+    width: inherit;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid  var(--secondary_color);
+    display: flex;
+    cursor:var(--cursor_hand_halloween),default;
+
+    padding: 8px 8px;
+    font-size: medium;
+    color: #ffffff;
+    cursor:var(--cursor_hand_halloween),default;
+
+}
+
+
+.biglongtextzone {
+    background-color: rgba(0,0,0,0.4);
+    width: inherit;
+    height: 10rem;
+    border-radius: 10px;
+    border: 1px solid  var(--secondary_color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor:var(--cursor_hand_halloween),default;
+
+    padding: 8px 8px;
+    font-size: medium;
+    color: #ffffff;
+    resize: none; 
+    cursor:var(--cursor_hand_halloween),default;
+
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.cinfostextsmall {
+    display: none;
+}
+
+/* CSS for the strenght bar for the password */
+
+#pwd_strength {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#bar_pwd_base {
+    height: 8px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 4px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+#bar_pwd_strength {
+    height: 100%;
+    width: 0%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+#bar_pwd_strength.weak {
+    background-color: red;
+}
+
+#bar_pwd_strength.medium {
+    background-color: orange;
+}
+
+#bar_pwd_strength.strong {
+    background-color: green;
+}
+
+#text_strength {
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 990px) {
+
+    .ntextzone {
+        height: 3rem;
+    }
+    
+    .longtextzone {
+        width: inherit;
+        height: 3rem;
+    }
+    
+    .biglongtextzone {
+        height: 10rem;
+    }
+}
+
+@media (max-width: 650px) {
+    
+    .clogobox {
+        width: 7.25rem;
+    }
+    
+    .ctext {
+        font-size: 0.8rem;
+    }
+
+    .mbox {
+        width: 80%;
+    }
+
+    .frtbox{
+        flex-direction: column;
+    }
+    
+    .ntextzone {
+        width: 100%;
+        height: 4rem;
+        
+    }
+    
+    .longtextzone {
+        width: inherit;
+        height: 4rem;
+    }
+    
+    .biglongtextzone {
+        height: 16rem;
+    }
+}
+
+@media (max-width: 390px) {
+    
+    .cbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1%;
+        margin-bottom: 1%;
+    }
+
+    .ctextsmall {
+        display: block;
+        text-align: left;
+        font-size: 100%;
+        text-decoration: none;
+    }
+
+    .ctext {
+        display: none;
+    }
+
+    .cleftsmall {
+        padding: 0.1rem;
+    }
+
+    .cinfos {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .clogobox {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .cinfostextsmall {
+        display: block;
+    }
+
+    .cflexcontentalign {
+        flex-direction: row;
+    }
+
+    .clogophone {
+        display: none;
+    }
+    
+    .clogomail {
+        display: none;
+    }
+    
+    .clogoloca {
+        display: none;
+    }
+
+    .mbox {
+        border-radius: 0.5rem;
+        width: 80%;
+        margin: 0px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .ntextzone {
+        width: inherit;
+        height: 4rem;
+    }
+    
+    .longtextzone {
+        width: inherit;
+        height: 4rem;
+    }
+    
+    .biglongtextzone {
+        height: 18rem;
+            }
+}

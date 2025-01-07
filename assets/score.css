@@ -1,0 +1,309 @@
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color:var(--bacground_color);
+    font-family:var(--principal_font);
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 1651;
+  
+}
+a{
+    cursor:var(--cursor_hand_halloween),default;
+}
+  body{
+    background-color:var(--bacground_color);
+    cursor:var(--cursor_pointing_halloween),default;
+
+
+  }
+a{
+    cursor:var(--cursor_hand_halloween),default;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.titlefade{
+    height: 8rem;
+}
+
+.bigtitle {
+    font-size: 4rem;
+    
+}
+
+
+.center2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-top: 6%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#searchBar {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    background-color:  var(--principal_color);
+    color: #ffffff;
+    font-family: 'Creepster', cursive;
+    transition: 0.3s ease;
+}
+
+#searchBar::placeholder {
+    color: #ffffff;
+}
+
+#searchBar:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color:  var(--principal_color);
+    box-shadow: 0px 0px 10px rgba(255, 107, 107, 0.5);
+    
+}
+
+.searchBar {
+    pointer-events: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.displayScore {
+    border: 2px solid #fff; 
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: rgba(34, 3, 34, 0.336);
+    border: inset  var(--principal_color);
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Effet d'ombre */
+}
+
+.score-list {
+    list-style-type: none; /* Retire les puces */
+    padding: 0;
+    color: white; /* Texte blanc */
+    font-family: 'Creepster', cursive; /* Police spéciale */
+    font-size: 1.2rem;
+}
+
+.score-list li {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fond des éléments */
+    border-radius: 5px; /* Arrondis pour chaque score */
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.score-list li:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Effet au survol */
+}
+
+.search{
+    font-family:var(--principal_font);
+    background-color:  var(--principal_color);
+    color: #ffffff;
+    padding: 10px;
+    border-top: 1px solid  var(--secondary_color);
+    border-bottom: 1px solid  var(--secondary_color);
+    border-left: 1px solid  var(--secondary_color);
+    border-right: 1px solid rgba(127, 80, 163, 0.63);
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    cursor:var(--cursor_hand_halloween),default;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.submitform{
+    font-family:var(--principal_font);
+    background-color:  var(--principal_color);
+    color: #ffffff;
+    padding: 10px;
+    border-top: 1px solid  var(--secondary_color);
+    border-bottom: 1px solid  var(--secondary_color);
+    border-right: 1px solid  var(--secondary_color);
+    border-left: 1px solid  var(--secondary_color);
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    cursor:var(--cursor_hand_halloween),default;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.table{
+    border: 3px solid  var(--secondary_color);
+    border-radius: 8px;
+}
+
+.table_score{
+    background-color: rgba(0, 0, 0, 0.74);
+    border: 1px solid  var(--secondary_color);
+}
+
+.table_head{
+    background-color:  var(--secondary_color);
+    border: 1px solid  var(--secondary_color);
+}
+
+.table_name{
+    color : var(--principal_color);
+    background-color:  var(--secondary_color);
+    border: 1px solid  var(--secondary_color);
+}
+
+@media screen and (max-width: 1250px) {
+    body{
+        padding-bottom: 450px
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    body{
+        padding-bottom: 750px
+    }
+}
+
+@media screen and (max-width: 1094px) {
+    body{
+        padding-bottom: 850px
+    }
+}
+
+
+
+@media only screen and (max-width: 932px) {
+    .center2 {
+        width: 100%;
+        left: 0;
+        transform: none;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    #searchBar {
+        width: 90%;
+        max-width: none;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .displayScore {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .score-list li {
+        font-size: 1rem;
+        padding: 6px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .center2 {
+        width: 100%;
+        left: 0;
+        transform: none;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    #searchBar {
+        width: 85%;
+        max-width: none;
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+
+    .displayScore {
+        width: 85%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .score-list li {
+        font-size: 0.9rem;
+        padding: 5px;
+        margin: 8px 0;
+    }
+
+    #particles-js-canva-el{
+        width: 0%;
+        height: 0%;
+        display: none;
+
+    }    
+    body{
+        padding-bottom: 100px
+    }
+
+    .bigtitle {
+        font-size: 2rem;
+    }
+
+    
+}
+
+@media only screen and (max-width: 435px) {
+    .search {
+        font-size: 0.8rem;
+    }
+    .submitform {
+        font-size: 0.8rem;
+    }
+
+    .displayScore {
+    font-size: 0.6rem;
+    }
+
+    .bigtitle {
+        font-size: 6rem;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .center2 {
+        width: 100%;
+        left: 0;
+        transform: none;
+        padding: 0 10px;
+        position: relative;
+    }
+
+    #searchBar {
+        width: 80%;
+        max-width: none;
+        padding: 6px;
+        border-radius: 15px;
+    }
+
+    .displayScore {
+        width: 80%;
+        padding: 8px;
+    }
+
+    .score-list li {
+        padding: 4px;
+        margin: 6px 0;
+    }
+}
